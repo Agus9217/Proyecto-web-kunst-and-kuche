@@ -1,0 +1,1 @@
+gsap.from("#box, #slider", {duration: 1.5, x: 300, opacity: 0});
