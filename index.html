@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/sass/style.css">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="animate.css"/>
+  
   
   
   <link rel="icon" type="image/jpg" href="/img/favicon.jpg"/>
@@ -52,10 +54,10 @@
           
       </header>
 
-      <div class="p-5 mb-3 bg-light rounded-3 row align-items-center">
+      <div class="p-5 mb-3 bg-light row align-items-center">
 
 
-        <div class="col-md-6"  id="box">
+        <div class="col-md-6 wow animate__animated animate__backInLeft">
           <h1 class="fw-bold">Bienvenida (lo que sea)</h1>
           <p class="fs-6 py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, illum consequatur, consequuntur dolorum, nostrum rem iste exercitationem et tenetur vitae itaque ipsam. Ex ad nemo veritatis inventore, laudantium dolorem sunt.</p>
           <a href="" class="btn btn-secondary my-3">Explorar</a>
@@ -63,16 +65,16 @@
           
         </div>
 
-        <div id="slider" class="col-md-6">
+        <div id="slider" class="col-md-6 wow animate__animated animate__backInRight">
           <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade shadow-lg" data-bs-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active">
+              <div class="carousel-item active" data-bs-interval="2000">
                 <img src="/img/pexels-lukas-952478.jpg" class="d-block w-100" alt="...">
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item" data-bs-interval="2000">
                 <img src="/img/pexels-markus-spiske-109395.jpg" class="d-block w-100" alt="...">
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item" data-bs-interval="2000">
                 <img src="/img/pexels-photomix-company-291767.jpg" class="d-block w-100" alt="...">
               </div>
             </div>
@@ -83,14 +85,35 @@
       </div>
 
 
+      <div class="row wow animate__animated animate__backInLeft">
+        <div class="col-md-4">
+          <img class="d-block w-100" id="pic1" src="/img/img-body/pexels-castorly-stock-3722585.jpeg" alt="">
+        </div>
+        <div class="col-md-4">
+          <img class="d-block w-100" id="pic2" src="/img/img-body/pexels-klaus-nielsen-6294407.jpeg" alt="">
+        </div>
+        <div class="col-md-4">
+          <img class="d-block w-100" id="pic3" src="/img/img-body/pexels-miguel-á-padriñán-130980.jpeg" alt="">
+        </div>
+      </div>
+
+
+
+
+
     </div>
+
+    
+
+    
+      
     
 
   </main>
   
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <script src="main.js"></script>
+  <script>new WOW().init();</script>
   <script src="/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
