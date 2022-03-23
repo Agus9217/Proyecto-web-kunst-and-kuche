@@ -5,3 +5,8 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+#box2 {
+    opacity: 0;
+    transition: all 0.7s;
+}
+
