@@ -6,7 +6,7 @@ function box2Scroll() {
     for(var i=0; i < animadoBox2.length; i++ ) {
         let alturaAnimadoBox2 = animadoBox2[i].offsetTop;
         if(alturaAnimadoBox2 - 750 < scrollTop) {
-            animadoBox2[i].className = "row animate__animated animate__fadeInDown";
+            animadoBox2[i].className = "row animate__animated animate__backInUp";
         }
     }
 }
