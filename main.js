@@ -1,5 +1,6 @@
 let animadoBox2 = document.querySelectorAll("#box2");
 let animadoBox1 = document.querySelectorAll("#box1");
+let animadoBox3 = document.querySelectorAll("#box3");
 
 function box2Scroll() {
     let scrollTop = document.documentElement.scrollTop;
@@ -22,6 +23,16 @@ function box1Scroll() {
     }
 }
 
+function box3Scroll() {
+    let scrollTop = document.documentElement.scrollTop;
+    for(var i=0; i < animadoBox3.length; i++ ) {
+        let alturaAnimadoBox3 = animadoBox3[i].offsetTop;
+        if(alturaAnimadoBox3 - 750 < scrollTop) {
+            animadoBox3[i].className = "row align-items-md-stretch animate__animated animate__backInLeft";
+        }
+    }
+}
 
 
-window.onscroll = function() {box1Scroll(), box2Scroll()};
+
+window.onscroll = function() {box1Scroll(), box2Scroll(), box3Scroll()};
