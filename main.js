@@ -33,6 +33,17 @@ function box3Scroll() {
     }
 }
 
+function colorScroll(){
+    if(document.documentElement.scrollTop > 420){
+        document.getElementById("navBar").className = "navbar navbar-expand-lg navbar-dark bg-black fixed-top";
+    }
+    else {document.getElementById("navBar").className = "navbar navbar-expand-lg navbar-dark fixed-top"}
+}
 
 
-window.onscroll = function() {box1Scroll(), box2Scroll(), box3Scroll()};
+
+
+
+
+
+window.onscroll = function() {box1Scroll(), box2Scroll(), box3Scroll(), colorScroll()};
