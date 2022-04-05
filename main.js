@@ -18,7 +18,7 @@ function box1Scroll() {
     for(var i=0; i < animadoBox1.length; i++ ) {
         let alturaAnimadoBox1 = animadoBox1[i].offsetTop;
         if(alturaAnimadoBox1 - 750 < scrollTop) {
-            animadoBox1[i].className = "row align-items-md-stretch animate__animated animate__backInLeft";
+            animadoBox1[i].className = "row mx-auto animate__animated animate__backInLeft";
         }
     }
 }
