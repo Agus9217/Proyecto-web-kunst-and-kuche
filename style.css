@@ -30,6 +30,11 @@
     z-index: 2;
 }
 
+#main-1:hover {
+    opacity: 0;
+    transition: all .6s;
+}
+
 
 
 
