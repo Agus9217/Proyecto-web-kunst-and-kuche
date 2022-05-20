@@ -35,6 +35,16 @@
     transition: all .6s;
 }
 
+.max {
+    max-width: 715px;
+    width: 100%;
+}
+
+.max_min{
+    max-width: 355px;
+    width: 100%;
+}
+
 
 
 
